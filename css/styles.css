@@ -27,3 +27,145 @@ a {
 button {
   cursor: pointer;
 }
+
+/* #-#-#-#-#-#-#-#-#-#-#-# START: HOME #-#-#-#-#-#-#-#-#-#-#-# */
+
+#home {
+  background-image: url("../images/wallpaper.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 98%, 0 80%);
+  height: 100%;
+}
+
+#home .wrapper {
+  height: calc(100% - 300px);
+  max-width: 1700px;
+  padding: 0 50px;
+  margin: auto;
+}
+
+#home .wrapper header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#home .wrapper header div {
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+#home .wrapper header div img {
+  height: 100px;
+}
+
+#home .wrapper header div ul {
+  display: flex;
+  list-style: none;
+}
+
+#home .wrapper header div ul li {
+  padding: 0 25px;
+}
+
+#home .wrapper header div ul li a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+#home header div ul li a::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  display: block;
+  height: 4px;
+  background-color: #fed516;
+  right: 0;
+  bottom: -5px;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+#home header div ul li a:hover::after,
+.active::after {
+  width: 50% !important;
+}
+
+#home .wrapper .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+}
+
+#home .wrapper .container .content {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home .wrapper .container .content div {
+  position: relative;
+  display: flex;
+  width: 725px;
+  justify-content: flex-start;
+}
+
+#home .wrapper .container .content div h1 {
+  color: #ffffff;
+  display: block;
+  width: fit-content;
+}
+
+#home .wrapper .container .content div h1::after {
+  content: "|";
+  color: "#ffffff";
+}
+
+#home .wrapper .container .content div img {
+  color: #ffffff;
+  height: 150px;
+  width: 100px;
+  transform: rotateZ(15deg);
+  opacity: 0;
+}
+
+#home .wrapper .container .content div #text {
+  font-size: 3.3em;
+}
+
+#home .wrapper .container .content div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 16px;
+  bottom: 0;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #fed516;
+}
+
+#home .wrapper .container .content img {
+  width: 600px;
+}
+
+/* #-#-#-#-#-#-#-#-#-#-#-# END: HOME #-#-#-#-#-#-#-#-#-#-#-# */
