@@ -28,6 +28,11 @@ button {
   cursor: pointer;
 }
 
+.fade {
+  opacity: 1 !important;
+  animation: fade 2s ease-out;
+}
+
 /* #-#-#-#-#-#-#-#-#-#-#-# START: HOME #-#-#-#-#-#-#-#-#-#-#-# */
 
 #home {
@@ -132,12 +137,13 @@ button {
 #home .wrapper .container .content div h1 {
   color: #ffffff;
   display: block;
-  width: fit-content;
+  width: 565px;
 }
 
 #home .wrapper .container .content div h1::after {
   content: "|";
   color: "#ffffff";
+  animation: blink 0.5s linear infinite;
 }
 
 #home .wrapper .container .content div img {
