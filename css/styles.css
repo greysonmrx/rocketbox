@@ -67,7 +67,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
 }
 
 #home .wrapper header div img {
@@ -116,14 +115,12 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 50px;
 }
 
 #home .wrapper .container .content {
-  max-width: 1600px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -175,3 +172,68 @@ button {
 }
 
 /* #-#-#-#-#-#-#-#-#-#-#-# END: HOME #-#-#-#-#-#-#-#-#-#-#-# */
+
+/* #-#-#-#-#-#-#-#-#-#-#-# START: ABOUT #-#-#-#-#-#-#-#-#-#-#-# */
+
+#about {
+  background-color: #212121;
+  height: 100%;
+  width: 100%;
+}
+
+#about .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 90%, 0 100%);
+}
+
+#about .container .content {
+  max-width: 1700px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .container .content div {
+  height: 100%;
+}
+
+#about .container .content img {
+}
+
+#about .container .content div h1 {
+  color: #fed516;
+  font-size: 80pt;
+  font-weight: bold;
+}
+
+#about .container .content div h2 {
+  color: #212121;
+  font-size: 80pt;
+  font-weight: 400;
+  margin-bottom: -30px;
+}
+
+#about .container .content h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 20px;
+  bottom: 0;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: #fed516;
+}
+
+#about .container .content div p {
+  margin-top: 80px;
+  font-size: 22pt;
+  margin-right: 100px;
+  font-weight: 400;
+  color: #212121;
+}
+/* #-#-#-#-#-#-#-#-#-#-#-# END: ABOUT #-#-#-#-#-#-#-#-#-#-#-# */
