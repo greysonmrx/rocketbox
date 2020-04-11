@@ -350,3 +350,107 @@ button {
 }
 
 /* #-#-#-#-#-#-#-#-#-#-#-# END: SERVICES #-#-#-#-#-#-#-#-#-#-#-# */
+
+/* #-#-#-#-#-#-#-#-#-#-#-# START: CONTACT #-#-#-#-#-#-#-#-#-#-#-# */
+
+#contact {
+  background-color: #212121;
+  height: 100%;
+  width: 100%;
+}
+
+#contact .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+#contact .container .content {
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .container .content h1 {
+  color: #212121;
+  font-size: 50pt;
+  font-weight: 900;
+  margin-bottom: 100px;
+}
+
+#contact .container .content h1::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 20px;
+  bottom: 0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #fed516;
+}
+
+#contact .container .content h1 span {
+  color: #fed516;
+}
+
+#contact .container .content form {
+  width: 100%;
+}
+
+#contact .container .content form div {
+  width: 100%;
+  display: flex;
+}
+
+#contact .container .content form textarea {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  resize: none;
+  margin: 50px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #212121;
+  font-size: 16pt;
+  padding: 0 20px;
+}
+
+#contact .container .content form button {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border: 2px solid #212121;
+  outline: none;
+  margin-bottom: 50px;
+  background: none;
+  font-size: 16pt;
+  padding: 20px 0;
+  color: #212121;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+#contact .container .content form button:hover {
+  background: #212121;
+  color: #ffffff;
+}
+
+#contact .container .content form div input {
+  width: 50%;
+  margin: 20px 20px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #212121;
+  height: 60px;
+  font-size: 16pt;
+}
+
+/* #-#-#-#-#-#-#-#-#-#-#-# END: CONTACT #-#-#-#-#-#-#-#-#-#-#-# */
