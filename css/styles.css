@@ -237,3 +237,116 @@ button {
   color: #212121;
 }
 /* #-#-#-#-#-#-#-#-#-#-#-# END: ABOUT #-#-#-#-#-#-#-#-#-#-#-# */
+
+/* #-#-#-#-#-#-#-#-#-#-#-# START: SERVICES #-#-#-#-#-#-#-#-#-#-#-# */
+
+#services {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+#services .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 70% 100%, 0 90%);
+}
+
+#services .container .content {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  padding: 50px;
+}
+
+#services .container .content h1 i {
+  color: #ffffff;
+  font-size: 50pt;
+  font-weight: 900;
+}
+
+#services .container .content h1 i::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 20px;
+  bottom: 0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  background-color: #fed516;
+}
+
+#services .container .content .items {
+  margin: 100px 0 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#services .container .content .items .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+
+#services .container .content .items .item::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 4px solid transparent;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+#services .container .content .items .item::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 4px solid transparent;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+#services .container .content .items .item:hover::before {
+  height: 100%;
+  width: 100%;
+  border: 4px solid #fed516;
+  border-right: none;
+  border-bottom: none;
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out 0.3s;
+}
+
+#services .container .content .items .item:hover::after {
+  height: 100%;
+  width: 100%;
+  border: 4px solid #fed516;
+  border-left: none;
+  border-top: none;
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out 0.3s;
+}
+
+#services .container .content .items .item img {
+  width: 100px;
+}
+
+#services .container .content .items .item span {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+/* #-#-#-#-#-#-#-#-#-#-#-# END: SERVICES #-#-#-#-#-#-#-#-#-#-#-# */
