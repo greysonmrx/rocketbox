@@ -496,6 +496,11 @@ footer .wrapper ul li:hover {
 
 footer .wrapper div a {
   padding: 0 10px;
+  transition: all ease 0.2s;
+}
+
+footer .wrapper div a:hover {
+  transform: translateY(-5px);
 }
 
 footer .wrapper div a img {
