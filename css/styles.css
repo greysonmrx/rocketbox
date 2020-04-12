@@ -12,6 +12,7 @@ html {
   background-color: #ffffff;
   color: rgb(33, 33, 33);
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 input,
