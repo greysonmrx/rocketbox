@@ -480,18 +480,17 @@ footer .wrapper div {
 
 footer .wrapper ul li {
   padding: 0 15px;
+  transition: all ease 0.2s;
 }
 
 footer .wrapper ul li a {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
-  /* transition: all ease 0.2s; */
 }
 
-footer .wrapper ul li a:hover {
-  transform: translateY(20px);
-  color: blue;
+footer .wrapper ul li:hover {
+  transform: translateY(-5px);
 }
 
 footer .wrapper div a {
