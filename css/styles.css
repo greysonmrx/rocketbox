@@ -454,3 +454,51 @@ button {
 }
 
 /* #-#-#-#-#-#-#-#-#-#-#-# END: CONTACT #-#-#-#-#-#-#-#-#-#-#-# */
+
+footer {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #212121;
+}
+
+footer .wrapper {
+  max-width: 1500px;
+  padding: 0 50px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .wrapper ul {
+  display: flex;
+  list-style: none;
+}
+
+footer .wrapper div {
+  display: flex;
+}
+
+footer .wrapper ul li {
+  padding: 0 15px;
+}
+
+footer .wrapper ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  /* transition: all ease 0.2s; */
+}
+
+footer .wrapper ul li a:hover {
+  transform: translateY(20px);
+  color: blue;
+}
+
+footer .wrapper div a {
+  padding: 0 10px;
+}
+
+footer .wrapper div a img {
+  width: 20px;
+}
