@@ -3,11 +3,11 @@
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 99.9%, 0 90%);
   }
 
-  #home .wrapper header div ul li {
+  #home .wrapper header .menu-section .menu-m ul li {
     padding: 0 15px;
   }
 
-  #home .wrapper header div img {
+  #home .wrapper header .menu-section img {
     height: 80px;
   }
 
@@ -73,11 +73,67 @@
     padding: 0 20px;
   }
 
-  #home .wrapper header div img {
+  #home .wrapper header .menu-section img {
     height: 70px;
   }
 
-  #home .wrapper header div ul {
+  #home .wrapper header .menu-section .menu-m .menu-toggle {
+    display: block;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+    background: white;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8.5px, -9.5px);
+    background: white;
+  }
+
+  #home .wrapper header .menu-section .menu-m ul {
+    display: none;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on ul {
+    display: block;
+    text-align: center;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on ul li {
+    margin: 30px 0;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on ul li a {
+    font-size: 30px;
+  }
+
+  #home .wrapper header .menu-section .menu-m.on ul li a::after {
     display: none;
   }
 
@@ -171,7 +227,7 @@
 }
 
 @media (max-width: 600px) {
-  #home .wrapper header div img {
+  #home .wrapper header .menu-section img {
     height: 50px;
   }
 

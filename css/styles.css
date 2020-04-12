@@ -34,6 +34,20 @@ button {
   animation: fade 2s ease-out;
 }
 
+.one,
+.two,
+.three {
+  background-color: #fed516;
+  width: 100%;
+  height: 4px;
+  margin: 7px auto;
+  transition: all 0.2s ease;
+}
+
+.clip {
+  clip-path: none !important;
+}
+
 /* #-#-#-#-#-#-#-#-#-#-#-# START: HOME #-#-#-#-#-#-#-#-#-#-#-# */
 
 #home {
@@ -61,7 +75,7 @@ button {
   justify-content: center;
 }
 
-#home .wrapper header div {
+#home .wrapper header .menu-section {
   width: 100%;
   max-width: 1600px;
   height: 100%;
@@ -70,20 +84,26 @@ button {
   align-items: center;
 }
 
-#home .wrapper header div img {
+#home .wrapper header .menu-section img {
   height: 100px;
 }
 
-#home .wrapper header div ul {
+#home .wrapper header .menu-section .menu-m .menu-toggle {
+  width: 35px;
+  height: 30px;
+  display: none;
+}
+
+#home .wrapper header .menu-section .menu-m ul {
   display: flex;
   list-style: none;
 }
 
-#home .wrapper header div ul li {
+#home .wrapper header .menu-section .menu-m ul li {
   padding: 0 25px;
 }
 
-#home .wrapper header div ul li a {
+#home .wrapper header .menu-section .menu-m ul li a {
   position: relative;
   color: #ffffff;
   text-decoration: none;
@@ -92,7 +112,7 @@ button {
   letter-spacing: 1px;
 }
 
-#home header div ul li a::after {
+#home header .menu-section .menu-m ul li a::after {
   content: "";
   width: 0%;
   position: absolute;
@@ -105,7 +125,7 @@ button {
   transition: all 0.2s;
 }
 
-#home header div ul li a:hover::after,
+#home header .menu-section .menu-m ul li a:hover::after,
 .active::after {
   width: 50% !important;
 }

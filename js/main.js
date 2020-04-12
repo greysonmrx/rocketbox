@@ -1,8 +1,30 @@
 const menu = document.getElementById("menu");
 const links = menu.getElementsByClassName("link");
 
+let showMenu = false;
+
+const home = document.querySelector("#home");
+const menuSection = document.querySelector(".menu-m");
+const menuToggle = menuSection.querySelector(".menu-toggle");
+
+menuToggle.addEventListener("click", () => {
+  document.body.style.overflow = showMenu ? "hidden" : "initial";
+
+  menuSection.classList.toggle("on", showMenu);
+  home.classList.toggle("clip", showMenu);
+
+  showMenu = !showMenu;
+});
+
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function () {
+    document.body.style.overflow = "initial";
+
+    menuSection.classList.remove("on");
+    home.classList.remove("clip");
+
+    showMenu = false;
+
     var current = document.getElementsByClassName("active");
 
     current[0].className = current[0].className.replace(" active", "");
