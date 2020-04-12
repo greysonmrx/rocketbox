@@ -1,0 +1,263 @@
+@media (max-width: 1400px) {
+  #home {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 99.9%, 0 90%);
+  }
+
+  #home .wrapper header div ul li {
+    padding: 0 15px;
+  }
+
+  #home .wrapper header div img {
+    height: 80px;
+  }
+
+  #home .wrapper .container .content {
+    justify-content: center;
+  }
+
+  #home .wrapper .container .content img {
+    display: none;
+  }
+
+  #home .wrapper .container .content div img {
+    display: block;
+  }
+
+  #about .container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 93%, 0 100%);
+  }
+
+  #about .container .content img {
+    display: none;
+  }
+
+  #about .container .content div {
+    text-align: center;
+  }
+
+  #about .container .content h2::before {
+    margin: auto;
+  }
+
+  #services .container {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 70% 100%, 0 98%);
+  }
+
+  #services .container .content {
+    text-align: center;
+  }
+
+  #services .container .content h1 i::before {
+    margin: 50px auto 15px;
+  }
+
+  #contact .container .content {
+    text-align: center;
+  }
+
+  #contact .container .content h1::before {
+    margin: 0 auto 15px;
+  }
+
+  footer .wrapper ul li {
+    padding: 0 10px;
+  }
+
+  footer .wrapper ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  #home .wrapper {
+    padding: 0 20px;
+  }
+
+  #home .wrapper header div img {
+    height: 70px;
+  }
+
+  #home .wrapper header div ul {
+    display: none;
+  }
+
+  #home .wrapper .container .content div {
+    width: fit-content;
+  }
+
+  #home .wrapper .container .content div h1 {
+    width: 425px;
+  }
+
+  #home .wrapper .container .content div img {
+    height: 110px;
+    width: 75px;
+  }
+
+  #home .wrapper .container .content div #text {
+    font-size: 35px;
+  }
+
+  #home .wrapper .container .content div::after {
+    width: 80px;
+    height: 10px;
+  }
+
+  #about .container .content {
+    padding: 0 20px;
+  }
+
+  #about .container .content div h1 {
+    font-size: 60pt;
+  }
+
+  #about .container .content div h2 {
+    font-size: 60pt;
+    margin-bottom: -20px;
+  }
+
+  #about .container .content h2::before {
+    width: 80px;
+    height: 15px;
+  }
+
+  #about .container .content div p {
+    margin-top: 80px;
+    font-size: 18pt;
+  }
+
+  #services .container .content {
+    padding: 50px 20px;
+  }
+
+  #services .container .content h1 i {
+    font-size: 40pt;
+  }
+
+  #services .container .content h1 i::before {
+    width: 80px;
+    height: 15px;
+  }
+
+  #contact .container .content {
+    padding: 0 20px;
+  }
+
+  #contact .container .content h1 {
+    font-size: 40pt;
+  }
+
+  #contact .container .content h1::before {
+    width: 80px;
+    height: 15px;
+  }
+
+  #contact .container .content form div {
+    flex-direction: column;
+  }
+
+  #contact .container .content form div input {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  footer .wrapper {
+    padding: 0 20px;
+  }
+
+  footer .wrapper ul {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #home .wrapper header div img {
+    height: 50px;
+  }
+
+  #home .wrapper .container .content div h1 {
+    width: 300px;
+  }
+
+  #home .wrapper .container .content div img {
+    height: 80px;
+    width: 55px;
+  }
+
+  #home .wrapper .container .content div #text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  #home .wrapper .container .content div h1 {
+    width: 213px;
+  }
+
+  #home .wrapper .container .content div::after {
+    width: 40px;
+    height: 5px;
+  }
+
+  #home .wrapper .container .content div #text {
+    font-size: 18px;
+  }
+
+  #home .wrapper .container .content div img {
+    height: 52px;
+    width: 45px;
+  }
+
+  #about .container .content div h1 {
+    font-size: 40pt;
+  }
+
+  #about .container .content div h2 {
+    font-size: 40pt;
+    margin-bottom: -5px;
+  }
+
+  #about .container .content h2::before {
+    width: 60px;
+    height: 8px;
+  }
+
+  #about .container .content div p {
+    margin-top: 60px;
+    font-size: 14pt;
+  }
+
+  #services .container .content h1 i {
+    font-size: 30pt;
+  }
+
+  #services .container .content h1 i::before {
+    width: 60px;
+    height: 8px;
+  }
+
+  #contact .container .content h1 {
+    font-size: 30pt;
+  }
+
+  #contact .container .content h1::before {
+    width: 60px;
+    height: 8px;
+  }
+
+  #contact .container {
+    clip-path: polygon(0 0, 100% 0, 100% 96.8%, 0 100%);
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+
+  footer .wrapper {
+    justify-content: center;
+  }
+
+  footer .wrapper div {
+    display: none;
+  }
+}

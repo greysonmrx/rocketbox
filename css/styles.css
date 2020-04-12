@@ -203,6 +203,10 @@ button {
   height: 100%;
 }
 
+#about .container .content img {
+  margin-left: 100px;
+}
+
 #about .container .content div h1 {
   color: #fed516;
   font-size: 80pt;
@@ -230,7 +234,6 @@ button {
 #about .container .content div p {
   margin-top: 80px;
   font-size: 22pt;
-  margin-right: 100px;
   font-weight: 400;
   color: #212121;
 }
