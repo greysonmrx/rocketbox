@@ -51,6 +51,20 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const tel = document.getElementById("tel").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  const formatedMessage = `${message} / Nome: ${name}; Email: ${email}; Telefone: ${tel};`;
+
+  window.location.href = `mailto:simple@startup.com?subject=${subject}&body=${formatedMessage}`;
+});
+
 const strings = [
   {
     string: "Pronto",
