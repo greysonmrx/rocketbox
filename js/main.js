@@ -1,11 +1,30 @@
 const menu = document.getElementById("menu");
 const links = menu.getElementsByClassName("link");
+const arrow = document.querySelector(".top");
 
 let showMenu = false;
 
 const home = document.querySelector("#home");
 const menuSection = document.querySelector(".menu-m");
 const menuToggle = menuSection.querySelector(".menu-toggle");
+
+window.onscroll = () => scrollFunction();
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    arrow.style.transform = "scale(1)";
+  } else {
+    arrow.style.transform = "scale(0)";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 menuToggle.addEventListener("click", () => {
   document.body.style.overflow = showMenu ? "hidden" : "initial";
