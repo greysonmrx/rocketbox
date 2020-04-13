@@ -1,39 +1,11 @@
+const home = document.querySelector("#home");
 const menu = document.getElementById("menu");
 const links = menu.getElementsByClassName("link");
-const arrow = document.querySelector(".top");
-
-let showMenu = false;
-
-const home = document.querySelector("#home");
 const menuSection = document.querySelector(".menu-m");
 const menuToggle = menuSection.querySelector(".menu-toggle");
 
-window.onscroll = () => scrollFunction();
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    arrow.style.transform = "scale(1)";
-  } else {
-    arrow.style.transform = "scale(0)";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-menuToggle.addEventListener("click", () => {
-  document.body.style.overflow = showMenu ? "hidden" : "initial";
-
-  menuSection.classList.toggle("on", showMenu);
-  home.classList.toggle("clip", showMenu);
-
-  showMenu = !showMenu;
-});
+// Menu
+let showMenu = false;
 
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function () {
@@ -51,6 +23,34 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
+// Menu hamburguer
+menuToggle.addEventListener("click", () => {
+  document.body.style.overflow = showMenu ? "hidden" : "initial";
+
+  menuSection.classList.toggle("on", showMenu);
+  home.classList.toggle("clip", showMenu);
+
+  showMenu = !showMenu;
+});
+
+// Scroll to top
+const arrow = document.querySelector(".top");
+
+window.onscroll = () => scrollFunction();
+
+function scrollFunction() {
+  arrow.style.transform =
+    document.body.scrollTop > 100 || document.documentElement.scrollTop > 100
+      ? "scale(1)"
+      : "scale(0)";
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Send mail
 document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -65,6 +65,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   window.location.href = `mailto:simple@startup.com?subject=${subject}&body=${formatedMessage}`;
 });
 
+// Typewriter effect
 const strings = [
   {
     string: "Pronto",
